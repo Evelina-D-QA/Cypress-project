@@ -8,11 +8,11 @@ module.exports = defineConfig({
     baseUrl: 'https://guest:welcome2qauto@qauto.forstudy.space/',
     retries: {
       runMode: 1,
-      openMode: 1
+      openMode: 0
     },
     // viewportHeight: 2000,
     // viewportWidth: 2000
-    defaultCommandTimeout: 20000,
+    defaultCommandTimeout: 10000,
     pageLoadTimeout: 30000,
     video: true,
     screenshotOnRunFailure: true
