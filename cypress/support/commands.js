@@ -31,3 +31,14 @@ Cypress.Commands.add('login', (email, password) => {
     cy.get('#signinPassword').type(password);
     cy.contains('Login').click();
 })
+
+Cypress.Commands.add('registration', (name, lastName, email, password, rePassword) => {
+    cy.visit('/');
+    cy.get('.hero-descriptor_btn').click();
+    cy.get('#signupName').type(name);
+    cy.get('#signupLastName').type(lastName);
+    cy.get('#signupEmail').type(email);
+    cy.get('#signupPassword').type(password);
+    cy.get('#signupRepeatPassword').type(rePassword);
+    cy.contains('Register').click({force: true});
+})

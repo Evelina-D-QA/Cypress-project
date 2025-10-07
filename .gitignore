@@ -2,3 +2,9 @@ node_modules
 videos
 screenshots
 examples
+signin.cy.js
+LoginForm.js
+HomePage.js
+GaragePage.js
+queries.cy.js
+
