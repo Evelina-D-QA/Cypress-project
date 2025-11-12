@@ -10,6 +10,9 @@ module.exports = defineConfig({
       runMode: 1,
       openMode: 0
     },
+    // env: {
+    //   'USER_EMAIL': 'michael.krasnovskyi+testUser1@gmail.com'
+    // },
     // viewportHeight: 2000,
     // viewportWidth: 2000
     defaultCommandTimeout: 10000,
