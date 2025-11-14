@@ -14,23 +14,10 @@ module.exports = defineConfig({
 			USER_EMAIL: 'evie.maier.w+user4@gmail.com',
 			USER_PASSWORD: 'Gf6757jhvjdhsmf',
 		},
-		// viewportHeight: 2000,
-		// viewportWidth: 2000
+
 		defaultCommandTimeout: 10000,
 		pageLoadTimeout: 30000,
 		video: true,
 		screenshotOnRunFailure: true,
-
-		reporter: 'mochawesome',
-		reporterOptions: {
-			reportDir: 'mochawesome-report',
-			overwrite: false,
-			html: true,
-			json: true,
-			charts: true,
-			reportPageTitle: 'Cypress Test Report',
-			embeddedScreenshots: true,
-			inlineAssets: true,
-		},
 	},
 });
