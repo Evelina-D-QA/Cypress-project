@@ -1,22 +1,30 @@
 {
-  "name": "cypress-project",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Evelina-D-QA/Cypress-project.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Evelina-D-QA/Cypress-project/issues"
-  },
-  "homepage": "https://github.com/Evelina-D-QA/Cypress-project#readme",
-  "description": "",
-  "devDependencies": {
-    "cypress": "^15.3.0"
-  }
+	"name": "cypress-project",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"open-test-main": "npx cypress open --config-file cypress.main-site.config.js",
+		"run-test-main-headless": "npx cypress run --config-file cypress.main-site.config.js",
+		"open-test-bug-site": "npx cypress open --config-file cypress.bug-site.config.js",
+		"run-test-bug-site-headless": "npx cypress run --config-file cypress.bug-site.config.js",
+		"-reporter mochawesome": "npx mochawesome-merge \"cypress/results/*.json\" > mochawesome.json && npx marge mochawesome.json"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Evelina-D-QA/Cypress-project.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Evelina-D-QA/Cypress-project/issues"
+	},
+	"homepage": "https://github.com/Evelina-D-QA/Cypress-project#readme",
+	"description": "",
+	"devDependencies": {
+		"cypress": "^15.6.0",
+		"mochawesome": "^7.1.4",
+		"mochawesome-merge": "^5.0.0",
+		"mochawesome-report-generator": "^6.3.2"
+	}
 }
